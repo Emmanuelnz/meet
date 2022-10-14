@@ -8,7 +8,7 @@ export class NumberOfEvents extends Component {
   handleInputChange = (event) => {
     this.props.updateEvents(undefined, event.target.value);
     const value = event.target.value;
-    if (value > 30 ) {
+    if (value > 30 || value <= 0) {
       this.setState ({
         numberOfEvents: value,
         infoText: 'Invalid number, please choose a number between 1 and 30',
