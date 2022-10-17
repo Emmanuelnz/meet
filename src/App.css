@@ -97,7 +97,7 @@ input[type="number"] {
 
 .suggestions {
   width: 250px;
-  position: absolute;
+  position: relative;
   z-index: 2;
   align-self: center;
   margin: 0;
@@ -107,7 +107,7 @@ input[type="number"] {
 }
 
 .suggestions > li {
-  text-align: left;
+  text-align: center;
   padding: 8px 6px 8px 10px;
   background-color: #eee;
   cursor: default;
@@ -133,7 +133,7 @@ input[type="number"] {
   flex-basis: 300px;
   max-width: 300px;
   margin: auto;
-  position: relative;
+  
 }
 
 .event {
@@ -170,11 +170,6 @@ input[type="number"] {
   overflow-x: hidden;
 }
 
-.Alert {
-  position: fixed;
-  top: 20px;
-}
-
 .data-vis-wrapper {
   display: flex;
   align-items: center;
@@ -199,12 +194,21 @@ input[type="number"] {
   border-radius: 2px;
   background-color: #fff;
 }
+
 .google-icon {
   position: absolute;
   margin-top: 11px;
   margin-left: -8px;
   width: 18px;
   height: 18px;
+}
+/* ===================== Alerts ===================== */
+.CitySearch .Alert {
+ position: relative;
+}
+
+.numberOfEvents .Alert {
+  position: relative;
 }
 
 @media only screen and (min-width: 992px) {
