@@ -43,12 +43,12 @@ export class CitySearch extends Component {
     return (
       <div className='CitySearch'>
         <InfoAlert className="InfoAlert" text={this.state.infoText} />
-        <p>City:</p>
         <input
           type="text"
           className="city"
           value={this.state.query}
           onChange={this.handleInputChanged}
+          placeholder="Enter City"
           onFocus={() => { this.setState({ showSuggestions: true }) }}
         />
         <ul className="suggestions" style={this.state.showSuggestions ? {}: { display: 'none' }} >
