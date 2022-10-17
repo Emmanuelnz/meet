@@ -97,7 +97,7 @@ input[type="number"] {
 
 .suggestions {
   width: 250px;
-  position: relative;
+  position: absolute;
   z-index: 2;
   align-self: center;
   margin: 0;
@@ -133,7 +133,7 @@ input[type="number"] {
   flex-basis: 300px;
   max-width: 300px;
   margin: auto;
-  
+  position: relative;
 }
 
 .event {
